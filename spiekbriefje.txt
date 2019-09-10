@@ -1,1 +1,6 @@
 https://docs.micropython.org/en/latest/esp8266/quickref.html
+picocom /dev/ttyUSB0 -b115200
+ampy --port=/dev/ttyUSB0 put boot.py
+ampy --port=/dev/ttyUSB0 reset
+
+http://www.elec-tron.org/wp-content/uploads/2015/12/nodetoapaq102.png ledstrip
