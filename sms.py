@@ -3,17 +3,19 @@
 #
 # SMS gateway
 #
-# use modem-manager with USB-dongle to activate.
+# Use modem-manager with USB-dongle to activate.
 # TODO: Figure out how to use this in combination with WEB-repl
+#
 
+import os
 import sys
 import datetime
 
-stop_cmd1='''cp /home/aloha/code/stop.py /home/aloha/code/boot.py'''
-stop_cmd2='''ampy --port=/dev/ttyUSB0 put boot.py'''
+stop_cmd1 = '''cp /home/aloha/code/stop.py /home/aloha/code/boot.py'''
+stop_cmd2 = '''ampy --port=/dev/ttyUSB0 put boot.py'''
 
-start_cmd1='''cp /home/aloha/code/clock.py /home/aloha/code/boot.py'''
-start_cmd2='''ampy --port=/dev/ttyUSB0 put boot.py'''
+start_cmd1 = '''cp /home/aloha/code/clock.py /home/aloha/code/boot.py'''
+start_cmd2 = '''ampy --port=/dev/ttyUSB0 put boot.py'''
 
 if __name__ == "__main__":
     with open('/var/log/sms.log', 'a') as fh:
