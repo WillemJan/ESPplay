@@ -1,4 +1,4 @@
-current_date = (2019,09,12,12,42,44,42,0,0)
+current_date = (2019,9,12,12,42,44,42,0)
 
 import time
 import apa102
